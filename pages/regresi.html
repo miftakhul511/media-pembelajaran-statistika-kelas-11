@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="id">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>
+Regresi Linear | Statistika Explorer
+</title>
+
+
+<link rel="stylesheet" href="../css/materi.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<header class="lesson-header">
+
+
+<h1>
+📏 Misi 04: Regresi Linear
+</h1>
+
+
+<p>
+Membuat prediksi berdasarkan pola data
+</p>
+
+
+</header>
+
+
+
+
+
+
+
+<section class="lesson-container">
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+🎯 Permasalahan
+</h2>
+
+
+<p>
+
+Sebuah sekolah ingin mengetahui:
+
+</p>
+
+
+<p>
+
+<b>
+"Berapa perkiraan nilai siswa jika diketahui lama waktu belajar?"
+</b>
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+📊 Data Pengamatan
+</h2>
+
+
+
+<table>
+
+
+<tr>
+
+<th>
+Jam Belajar (X)
+</th>
+
+<th>
+Nilai (Y)
+</th>
+
+</tr>
+
+
+
+<tr><td>1</td><td>55</td></tr>
+
+<tr><td>2</td><td>65</td></tr>
+
+<tr><td>3</td><td>75</td></tr>
+
+<tr><td>4</td><td>80</td></tr>
+
+<tr><td>5</td><td>90</td></tr>
+
+
+</table>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+🧮 Langkah Perhitungan Regresi
+</h2>
+
+
+
+<h3>
+1. Menghitung Rata-rata
+</h3>
+
+
+<p>
+
+\[
+\bar{x}=\frac{\sum x}{n}
+\]
+
+</p>
+
+
+
+<p>
+
+\[
+\bar{y}=\frac{\sum y}{n}
+\]
+
+</p>
+
+
+
+
+<h3>
+2. Menghitung Koefisien Regresi
+</h3>
+
+
+<p>
+
+\[
+b=
+\frac{
+n\sum xy-(\sum x)(\sum y)
+}
+{
+n\sum x^2-(\sum x)^2
+}
+\]
+
+</p>
+
+
+
+
+<h3>
+3. Menghitung Konstanta
+</h3>
+
+
+<p>
+
+\[
+a=\bar{y}-b\bar{x}
+\]
+
+</p>
+
+
+
+
+<h3>
+4. Persamaan Regresi
+</h3>
+
+
+<div class="formula-box">
+
+
+y = a + bx
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+🧪 Eksperimen Prediksi
+</h2>
+
+
+
+<p>
+
+Masukkan jumlah jam belajar,
+kemudian lihat perkiraan nilai.
+
+
+</p>
+
+
+
+<input 
+type="number"
+id="jamBelajar"
+placeholder="Jam belajar">
+
+
+<button onclick="prediksiNilai()">
+
+Prediksi Nilai
+
+</button>
+
+
+
+<h3 id="hasilPrediksi">
+
+
+</h3>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="lesson-card inquiry">
+
+
+<h2>
+🤔 Pertanyaan Penyelidikan
+</h2>
+
+
+
+<div class="question">
+
+1.
+Apakah garis regresi selalu melewati semua titik data?
+
+</div>
+
+
+
+<div class="question">
+
+2.
+Mengapa regresi dapat digunakan untuk memperkirakan nilai?
+
+</div>
+
+
+
+<div class="question">
+
+3.
+Apakah hubungan yang kuat berarti X menyebabkan Y?
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="lesson-card concept">
+
+
+<h2>
+💡 Konsep yang Kamu Temukan
+</h2>
+
+
+<p>
+
+Regresi linear adalah metode untuk membuat
+model hubungan antara dua variabel dengan
+menggunakan garis terbaik.
+
+</p>
+
+
+<p>
+
+Model tersebut dapat digunakan untuk melakukan
+prediksi terhadap nilai yang belum diketahui.
+
+</p>
+
+
+
+<a href="korelasi.html">
+
+
+<button>
+
+Lanjut Korelasi →
+
+</button>
+
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+</section>
+
+
+
+
+
+<script src="../js/materi.js"></script>
+
+
+<div class="home-button">
+
+<a href="../index.html">
+
+<button>
+🏠 Menu Utama
+</button>
+
+</a>
+
+</div>
+
+</body>
+
+
+</html>

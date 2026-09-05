@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+Evaluasi Grafik | Statistika Explorer
+</title>
+
+
+<link rel="stylesheet" href="../css/materi.css">
+
+
+</head>
+
+
+
+<body>
+
+
+<header class="lesson-header">
+
+<h1>
+📊 Evaluasi Diagram Pencar
+</h1>
+
+<p>
+Jadilah analis data dan temukan pola hubungan
+</p>
+
+
+</header>
+
+
+
+
+
+<section class="lesson-container">
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+Tantangan 1
+</h2>
+
+
+<p>
+Perhatikan pola titik berikut.
+</p>
+
+
+
+<canvas 
+id="evalGrafik1"
+width="450"
+height="300">
+
+</canvas>
+
+
+
+<p>
+Hubungan yang ditunjukkan adalah:
+</p>
+
+
+<button onclick="cekGrafik(1,'positif')">
+Positif
+</button>
+
+
+<button onclick="cekGrafik(1,'negatif')">
+Negatif
+</button>
+
+
+<button onclick="cekGrafik(1,'tidak')">
+Tidak Ada Hubungan
+</button>
+
+
+<p id="hasilGrafik1"></p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+Tantangan 2
+</h2>
+
+
+<canvas 
+id="evalGrafik2"
+width="450"
+height="300">
+
+</canvas>
+
+
+
+<p>
+Hubungan yang ditunjukkan adalah:
+</p>
+
+
+
+<button onclick="cekGrafik(2,'positif')">
+Positif
+</button>
+
+
+<button onclick="cekGrafik(2,'negatif')">
+Negatif
+</button>
+
+
+<button onclick="cekGrafik(2,'tidak')">
+Tidak Ada Hubungan
+</button>
+
+
+
+<p id="hasilGrafik2"></p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+Tantangan 3
+</h2>
+
+
+<canvas 
+id="evalGrafik3"
+width="450"
+height="300">
+
+</canvas>
+
+
+
+<p>
+Hubungan yang ditunjukkan adalah:
+</p>
+
+
+
+<button onclick="cekGrafik(3,'positif')">
+Positif
+</button>
+
+
+<button onclick="cekGrafik(3,'negatif')">
+Negatif
+</button>
+
+
+<button onclick="cekGrafik(3,'tidak')">
+Tidak Ada Hubungan
+</button>
+
+
+
+<p id="hasilGrafik3"></p>
+
+
+
+</div>
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2 id="skorGrafik">
+
+Skor: 0
+
+</h2>
+
+
+</div>
+
+
+
+
+
+
+</section>
+
+
+
+
+<script src="../js/materi.js"></script>
+
+
+<script>
+
+gambarEvaluasiGrafik();
+
+</script>
+
+<div class="home-button">
+
+<a href="../index.html">
+
+<button>
+🏠 Menu Utama
+</button>
+
+</a>
+
+</div>
+
+</body>
+
+
+</html>

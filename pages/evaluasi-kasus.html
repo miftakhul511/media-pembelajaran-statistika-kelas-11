@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+Evaluasi Studi Kasus
+</title>
+
+
+<link rel="stylesheet" href="../css/materi.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<header class="lesson-header">
+
+
+<h1>
+🏆 Level 3: Data Analyst Challenge
+</h1>
+
+
+<p>
+Gunakan data untuk mengambil keputusan
+</p>
+
+
+</header>
+
+
+
+
+
+
+
+<section class="lesson-container">
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+📱 Studi Kasus: Strategi Iklan
+</h2>
+
+
+<p>
+
+Sebuah toko online ingin mengetahui apakah
+biaya iklan berhubungan dengan jumlah penjualan.
+
+</p>
+
+
+
+<table>
+
+
+<tr>
+
+<th>
+Biaya Iklan (X)
+</th>
+
+
+<th>
+Penjualan (Y)
+</th>
+
+</tr>
+
+
+<tr>
+<td>1</td>
+<td>20</td>
+</tr>
+
+
+<tr>
+<td>2</td>
+<td>35</td>
+</tr>
+
+
+<tr>
+<td>3</td>
+<td>45</td>
+</tr>
+
+
+<tr>
+<td>4</td>
+<td>60</td>
+</tr>
+
+
+<tr>
+<td>5</td>
+<td>75</td>
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+📊 Hasil Analisis Data
+</h2>
+
+
+<p>
+
+Persamaan regresi:
+
+</p>
+
+
+<div class="formula-box">
+
+y = 7 + 14x
+
+</div>
+
+
+
+<p>
+
+Koefisien korelasi:
+
+</p>
+
+
+<div class="formula-box">
+
+r = 0.97
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+🤔 Tantangan Analisis
+</h2>
+
+
+
+<p>
+
+Berdasarkan hasil tersebut,
+apakah toko sebaiknya meningkatkan biaya iklan?
+
+
+</p>
+
+
+
+<button onclick="jawabKasus('ya')">
+
+Ya, meningkatkan iklan
+
+</button>
+
+
+
+<button onclick="jawabKasus('tidak')">
+
+Tidak perlu
+
+</button>
+
+
+
+<p id="hasilKasus">
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+📝 Kesimpulanmu
+</h2>
+
+
+<textarea 
+id="jawabanSiswa"
+placeholder="
+Tuliskan alasan berdasarkan data...
+">
+
+</textarea>
+
+
+
+<button onclick="nilaiKesimpulan()">
+
+Kirim Analisis
+
+</button>
+
+
+
+<p id="feedbackKesimpulan">
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2 id="skorKasus">
+
+Skor: 0
+
+</h2>
+
+
+</div>
+
+
+
+
+
+
+</section>
+
+
+
+
+<script src="../js/materi.js"></script>
+
+
+<div class="home-button">
+
+<a href="../index.html">
+
+<button>
+🏠 Menu Utama
+</button>
+
+</a>
+
+</div>
+
+</body>
+
+</html>
