@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="id">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>
+Regresi Linear | Statistika Explorer
+</title>
+
+
+<link rel="stylesheet" href="../css/materi.css">
+
+
+</head>
+
+
+
+<body>
+<nav class="back-navigation" aria-label="Navigasi halaman"><a class="back-link" href="interpretasi.html" onclick="return kembaliSebelumnya(event)">← Kembali</a></nav>
+
+
+
+<header class="lesson-header">
+
+
+<h1>
+📏 Misi 04: Regresi Linear
+</h1>
+
+
+<p>
+Membuat prediksi berdasarkan pola data
+</p>
+
+
+</header>
+
+
+
+
+
+
+
+<section class="lesson-container">
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+🎯 Permasalahan
+</h2>
+
+
+<p>
+
+Sebuah sekolah ingin mengetahui:
+
+</p>
+
+
+<p>
+
+<b>
+"Berapa perkiraan nilai siswa jika diketahui lama waktu belajar?"
+</b>
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+📊 Data Pengamatan
+</h2>
+
+
+
+<table>
+
+
+<tr>
+
+<th>
+Jam Belajar (X)
+</th>
+
+<th>
+Nilai (Y)
+</th>
+
+</tr>
+
+
+
+<tr><td>1</td><td>55</td></tr>
+
+<tr><td>2</td><td>65</td></tr>
+
+<tr><td>3</td><td>75</td></tr>
+
+<tr><td>4</td><td>80</td></tr>
+
+<tr><td>5</td><td>90</td></tr>
+
+
+</table>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+🧮 Langkah Perhitungan Regresi
+</h2>
+
+
+
+<h3>
+1. Menghitung Rata-rata
+</h3>
+
+
+<div class="equation-box"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="Rata-rata x sama dengan jumlah x dibagi n"><mrow><mover><mi>x</mi><mo>¯</mo></mover><mo>=</mo><mfrac><mrow><mo>∑</mo><mi>x</mi></mrow><mi>n</mi></mfrac></mrow></math></div>
+
+
+
+<div class="equation-box"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="Rata-rata y sama dengan jumlah y dibagi n"><mrow><mover><mi>y</mi><mo>¯</mo></mover><mo>=</mo><mfrac><mrow><mo>∑</mo><mi>y</mi></mrow><mi>n</mi></mfrac></mrow></math></div>
+
+
+
+
+<h3>
+2. Menghitung Koefisien Regresi
+</h3>
+
+
+<div class="equation-box"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="b sama dengan n jumlah xy dikurangi jumlah x kali jumlah y, dibagi n jumlah x kuadrat dikurangi kuadrat jumlah x"><mrow><mi>b</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mo>∑</mo><mi>x</mi><mi>y</mi><mo>−</mo><mo>(</mo><mrow><mo>∑</mo><mi>x</mi></mrow><mo>)</mo><mo>(</mo><mrow><mo>∑</mo><mi>y</mi></mrow><mo>)</mo></mrow><mrow><mi>n</mi><mo>∑</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><msup><mrow><mo>(</mo><mrow><mo>∑</mo><mi>x</mi></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow></math></div>
+
+
+
+
+<h3>
+3. Menghitung Konstanta
+</h3>
+
+
+<div class="equation-box"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="a sama dengan rata-rata y dikurangi b kali rata-rata x"><mrow><mi>a</mi><mo>=</mo><mover><mi>y</mi><mo>¯</mo></mover><mo>−</mo><mi>b</mi><mover><mi>x</mi><mo>¯</mo></mover></mrow></math></div>
+
+
+
+
+<h3>
+4. Persamaan Regresi
+</h3>
+
+
+<div class="formula-box">
+
+
+y = a + bx
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+🧪 Eksperimen Prediksi
+</h2>
+
+
+
+<p>
+
+Masukkan jumlah jam belajar,
+kemudian lihat perkiraan nilai.
+
+
+</p>
+
+
+
+<input 
+type="number"
+id="jamBelajar"
+placeholder="Jam belajar">
+
+
+<button onclick="prediksiNilai()">
+
+Prediksi Nilai
+
+</button>
+
+
+
+<h3 id="hasilPrediksi">
+
+
+</h3>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="lesson-card inquiry">
+
+
+<h2>
+🤔 Pertanyaan Penyelidikan
+</h2>
+
+
+
+<div class="question">
+
+1.
+Apakah garis regresi selalu melewati semua titik data?
+
+</div>
+
+
+
+<div class="question">
+
+2.
+Mengapa regresi dapat digunakan untuk memperkirakan nilai?
+
+</div>
+
+
+
+<div class="question">
+
+3.
+Apakah hubungan yang kuat berarti X menyebabkan Y?
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="lesson-card concept">
+
+
+<h2>
+💡 Konsep yang Kamu Temukan
+</h2>
+
+
+<p>
+
+Regresi linear adalah metode untuk membuat
+model hubungan antara dua variabel dengan
+menggunakan garis terbaik.
+
+</p>
+
+
+<p>
+
+Model tersebut dapat digunakan untuk melakukan
+prediksi terhadap nilai yang belum diketahui.
+
+</p>
+
+
+
+<a href="korelasi.html">
+
+
+<button>
+
+Lanjut Korelasi →
+
+</button>
+
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+</section>
+
+
+
+
+
+<script src="../js/materi.js"></script>
+
+
+<div class="home-button">
+
+<a href="../index.html">
+
+<button>
+🏠 Menu Utama
+</button>
+
+</a>
+
+</div>
+
+</body>
+
+
+</html>

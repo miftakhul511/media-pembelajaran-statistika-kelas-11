@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="id">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>
+Korelasi | Statistika Explorer
+</title>
+
+
+<link rel="stylesheet" href="../css/materi.css">
+
+
+</head>
+
+
+
+<body>
+<nav class="back-navigation" aria-label="Navigasi halaman"><a class="back-link" href="regresi.html" onclick="return kembaliSebelumnya(event)">← Kembali</a></nav>
+
+
+<header class="lesson-header">
+
+
+<h1>
+🔗 Misi 05: Korelasi
+</h1>
+
+
+<p>
+Mengukur kekuatan hubungan antar variabel
+</p>
+
+
+</header>
+
+
+
+
+
+
+<section class="lesson-container">
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+🎯 Tantangan Data Analyst
+</h2>
+
+
+<p>
+
+Dua kelompok siswa memiliki data berbeda.
+
+Tugasmu:
+
+Apakah kedua data memiliki hubungan yang sama kuat?
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+📊 Perbandingan Diagram Pencar
+</h2>
+
+
+
+<div class="correlation-box">
+
+
+<h3>
+Data A
+</h3>
+
+
+<p>
+Titik sangat dekat dengan garis pola
+</p>
+
+
+<canvas 
+id="grafikKuat"
+width="400"
+height="250">
+
+</canvas>
+
+
+
+</div>
+
+
+
+
+
+<div class="correlation-box">
+
+
+<h3>
+Data B
+</h3>
+
+
+<p>
+Titik menyebar dan sulit membentuk pola
+</p>
+
+
+<canvas 
+id="grafikLemah"
+width="400"
+height="250">
+
+</canvas>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+🧮 Menghitung Koefisien Korelasi
+</h2>
+
+
+
+<p>
+
+Koefisien korelasi dilambangkan dengan:
+
+</p>
+
+
+<div class="formula-box">
+
+r
+
+</div>
+
+
+
+<p>
+
+Nilai r berada pada interval:
+
+</p>
+
+
+<div class="formula-box">
+
+-1 ≤ r ≤ 1
+
+</div>
+
+
+
+<h3>
+Rumus Korelasi Pearson
+</h3>
+
+
+
+<div class="formula-box">
+
+
+r =
+(nΣxy - ΣxΣy)
+/
+√((nΣx²-(Σx)²)(nΣy²-(Σy)²))
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="lesson-card">
+
+
+<h2>
+🧪 Simulasi Interpretasi
+</h2>
+
+
+
+<p>
+
+Masukkan nilai korelasi yang kamu peroleh.
+
+
+</p>
+
+
+
+<input 
+type="number"
+id="nilaiR"
+step="0.1"
+min="-1"
+max="1"
+placeholder="Contoh: 0.8">
+
+
+
+<button onclick="interpretasiR()">
+
+Analisis
+
+</button>
+
+
+
+<h3 id="hasilR">
+
+</h3>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="lesson-card inquiry">
+
+
+<h2>
+🤔 Pertanyaan Penyelidikan
+</h2>
+
+
+
+<div class="question">
+
+1.
+Apakah korelasi kuat berarti satu variabel menyebabkan variabel lain?
+
+</div>
+
+
+
+<div class="question">
+
+2.
+Mengapa data yang titiknya rapat memiliki korelasi lebih besar?
+
+</div>
+
+
+
+<div class="question">
+
+3.
+Dalam kehidupan nyata, kapan kita membutuhkan korelasi?
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="lesson-card concept">
+
+
+<h2>
+💡 Konsep yang Kamu Temukan
+</h2>
+
+
+
+<p>
+
+Korelasi adalah ukuran statistik yang menunjukkan
+arah dan kekuatan hubungan linear antara dua variabel.
+
+
+</p>
+
+
+<ul>
+
+
+<li>
+r mendekati +1 → hubungan positif kuat
+</li>
+
+
+<li>
+r mendekati -1 → hubungan negatif kuat
+</li>
+
+
+<li>
+r mendekati 0 → hubungan linear lemah/tidak ada
+</li>
+
+
+</ul>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<div class="lesson-card assignment-card">
+<h2>📝 Tugas Misi 05: Hitung Korelasi Data Kalian</h2>
+<p>Gunakan <b>seluruh pasangan data studi kasus pada Misi 01</b> untuk menghitung koefisien korelasi Pearson (<b>r</b>). Kerjakan perhitungan di buku kerja masing-masing.</p>
+<ol><li>Buat tabel bantu dengan kolom <b>X, Y, X², Y², dan XY</b> untuk setiap pasangan data.</li><li>Hitung banyak pasangan data (n), ΣX, ΣY, ΣX², ΣY², dan ΣXY.</li><li>Masukkan hasilnya ke rumus korelasi Pearson yang telah dipelajari. Tunjukkan langkah perhitungan dan bulatkan hasil akhir r hingga tiga angka di belakang koma.</li><li>Interpretasikan arah dan kekuatan hubungan berdasarkan nilai r. Nilai r berada pada rentang −1 sampai 1; jika semua nilai X atau semua nilai Y sama, r tidak dapat dihitung karena penyebutnya nol.</li><li>Bandingkan hasil perhitungan dengan interpretasi visual kalian pada Misi 03. Apakah keduanya sesuai? Jelaskan, lalu tuliskan kesimpulan studi kasus kalian.</li></ol>
+<p><b>Hasil tugas:</b> tabel bantu, langkah perhitungan, nilai r, interpretasi, dan kesimpulan berdasarkan data yang kalian teliti.</p>
+<a href="materi.html">
+
+
+<button>
+
+Kembali ke Materi
+
+</button>
+
+
+</a>
+</div>
+</section>
+
+
+
+
+
+<script src="../js/materi.js"></script>
+
+<script>
+
+gambarKorelasi();
+
+</script>
+
+<div class="home-button">
+
+<a href="../index.html">
+
+<button>
+🏠 Menu Utama
+</button>
+
+</a>
+
+</div>
+
+</body>
+
+
+</html>

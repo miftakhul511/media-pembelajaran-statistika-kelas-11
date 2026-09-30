@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="id">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>
+Diagram Pencar | Statistika Explorer
+</title>
+
+
+<link rel="stylesheet" href="../css/materi.css">
+
+
+</head>
+
+
+
+<body>
+<nav class="back-navigation" aria-label="Navigasi halaman"><a class="back-link" href="data-bivariat.html" onclick="return kembaliSebelumnya(event)">← Kembali</a></nav>
+
+
+<header class="lesson-header">
+
+
+<h1>
+📍 Misi 02: Diagram Pencar
+</h1>
+
+
+<p>
+Mengubah data menjadi pola visual
+</p>
+
+
+</header>
+
+
+
+
+
+<section class="lesson-container">
+
+
+
+
+
+<!-- FENOMENA -->
+
+
+<div class="lesson-card">
+
+
+<h2>
+🎯 Fenomena
+</h2>
+
+
+<p>
+
+Sebuah toko ingin mengetahui apakah
+<b>biaya iklan</b> berhubungan dengan
+<b>jumlah penjualan</b>.
+
+</p>
+
+
+<p>
+
+Data yang diperoleh:
+
+</p>
+
+
+<table>
+
+
+<tr>
+
+<th>
+Biaya Iklan (juta)
+</th>
+
+<th>
+Penjualan
+</th>
+
+</tr>
+
+
+
+<tr>
+<td>2</td>
+<td>20</td>
+</tr>
+
+
+<tr>
+<td>4</td>
+<td>35</td>
+</tr>
+
+
+<tr>
+<td>6</td>
+<td>50</td>
+</tr>
+
+
+<tr>
+<td>8</td>
+<td>70</td>
+</tr>
+
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+<!-- GRAFIK BERDASARKAN FENOMENA -->
+<div class="lesson-card">
+<h2>📊 Grafik Fenomena</h2>
+<p>Setiap titik mewakili satu pasangan biaya iklan dan penjualan pada tabel di atas.</p>
+<svg class="phenomenon-chart" viewBox="0 0 760 460" role="img" aria-labelledby="chart-title chart-description" xmlns="http://www.w3.org/2000/svg"><title id="chart-title">Diagram pencar biaya iklan dan penjualan</title><desc id="chart-description">Pasangan data: (2,20), (4,35), (6,50), (8,70). Titik-titik memperlihatkan pola hubungan positif.</desc><line x1="100" y1="360.0" x2="700" y2="360.0" stroke="#e2e8f0"/><text x="82" y="367.0" text-anchor="end">0</text><line x1="100" y1="322.5" x2="700" y2="322.5" stroke="#e2e8f0"/><text x="82" y="329.5" text-anchor="end">10</text><line x1="100" y1="285.0" x2="700" y2="285.0" stroke="#e2e8f0"/><text x="82" y="292.0" text-anchor="end">20</text><line x1="100" y1="247.5" x2="700" y2="247.5" stroke="#e2e8f0"/><text x="82" y="254.5" text-anchor="end">30</text><line x1="100" y1="210.0" x2="700" y2="210.0" stroke="#e2e8f0"/><text x="82" y="217.0" text-anchor="end">40</text><line x1="100" y1="172.5" x2="700" y2="172.5" stroke="#e2e8f0"/><text x="82" y="179.5" text-anchor="end">50</text><line x1="100" y1="135.0" x2="700" y2="135.0" stroke="#e2e8f0"/><text x="82" y="142.0" text-anchor="end">60</text><line x1="100" y1="97.5" x2="700" y2="97.5" stroke="#e2e8f0"/><text x="82" y="104.5" text-anchor="end">70</text><line x1="100" y1="60.0" x2="700" y2="60.0" stroke="#e2e8f0"/><text x="82" y="67.0" text-anchor="end">80</text><line x1="100" y1="60" x2="100" y2="360" stroke="#e2e8f0"/><text x="100" y="390" text-anchor="middle">0</text><line x1="220" y1="60" x2="220" y2="360" stroke="#e2e8f0"/><text x="220" y="390" text-anchor="middle">2</text><line x1="340" y1="60" x2="340" y2="360" stroke="#e2e8f0"/><text x="340" y="390" text-anchor="middle">4</text><line x1="460" y1="60" x2="460" y2="360" stroke="#e2e8f0"/><text x="460" y="390" text-anchor="middle">6</text><line x1="580" y1="60" x2="580" y2="360" stroke="#e2e8f0"/><text x="580" y="390" text-anchor="middle">8</text><line x1="700" y1="60" x2="700" y2="360" stroke="#e2e8f0"/><text x="700" y="390" text-anchor="middle">10</text><path d="M100 60V360H700" fill="none" stroke="#475569" stroke-width="2"/><text x="400" y="435" text-anchor="middle">Biaya Iklan (juta)</text><text transform="translate(30 215) rotate(-90)" text-anchor="middle">Penjualan</text><circle cx="220" cy="285.0" r="8" fill="#2563eb"/><text x="234" y="272.0">(2, 20)</text><circle cx="340" cy="228.75" r="8" fill="#2563eb"/><text x="354" y="215.75">(4, 35)</text><circle cx="460" cy="172.5" r="8" fill="#2563eb"/><text x="474" y="159.5">(6, 50)</text><circle cx="580" cy="97.5" r="8" fill="#2563eb"/><text x="594" y="84.5">(8, 70)</text></svg><p>Titik-titik cenderung naik dari kiri ke kanan: biaya iklan yang lebih besar pada data ini disertai penjualan yang lebih tinggi.</p>
+</div>
+
+<!-- INPUT DATA -->
+
+
+<div class="lesson-card">
+
+
+<h2>
+🧪 Eksperimen Data
+</h2>
+
+
+<p>
+Masukkan pasangan data X dan Y.
+Perhatikan bagaimana titik berubah pada bidang Cartesius.
+</p>
+
+
+
+<div class="input-area">
+
+
+<input 
+type="number"
+id="nilaiX"
+placeholder="Nilai X">
+
+
+<input 
+type="number"
+id="nilaiY"
+placeholder="Nilai Y">
+
+
+
+<button onclick="tambahData()">
+
+Tambah Titik
+
+</button>
+
+
+</div>
+
+
+
+<table id="dataTable">
+
+
+<tr>
+
+<th>
+X
+</th>
+
+<th>
+Y
+</th>
+
+</tr>
+
+
+</table>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- CARTESIUS -->
+
+
+<div class="lesson-card">
+
+
+<h2>
+📊 Visualisasi Diagram Pencar
+</h2>
+
+
+<p>
+Setiap pasangan data akan menjadi satu titik koordinat.
+</p>
+
+
+
+<canvas 
+id="scatterCanvas"
+width="600"
+height="450">
+
+</canvas>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- INQUIRY -->
+
+
+<div class="lesson-card inquiry">
+
+
+<h2>
+🤔 Pertanyaan Penyelidikan
+</h2>
+
+
+
+<div class="question">
+
+1.
+Apa pola yang terlihat dari titik-titik tersebut?
+
+</div>
+
+
+
+<div class="question">
+
+2.
+Apakah titik bergerak naik, turun, atau acak?
+
+</div>
+
+
+
+<div class="question">
+
+3.
+Menurutmu, apakah biaya iklan memiliki hubungan dengan penjualan?
+
+</div>
+
+
+
+<button onclick="showScatterConcept()">
+
+Temukan Konsep
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- KONSEP -->
+
+
+<div 
+class="lesson-card concept"
+id="scatterConcept"
+style="display:none;">
+
+
+
+<h2>
+💡 Konsep Diagram Pencar
+</h2>
+
+
+
+<p>
+
+
+Diagram pencar adalah penyajian data
+dua variabel dalam bentuk titik-titik
+pada bidang koordinat.
+
+
+</p>
+
+
+
+<p>
+
+
+Setiap titik menunjukkan pasangan:
+
+</p>
+
+
+<ul>
+
+<li>
+X = variabel bebas
+</li>
+
+<li>
+Y = variabel terikat
+</li>
+
+
+</ul>
+
+
+
+<p>
+
+Melalui diagram pencar, kita dapat melihat
+apakah terdapat pola hubungan antar variabel.
+
+</p>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<div class="lesson-card assignment-card">
+<h2>📝 Tugas Misi 02: Buat Diagram Pencar</h2>
+<p>Gunakan <b>data studi kasus yang kalian kumpulkan pada Misi 01</b>. Buat diagram pencar di buku kerja masing-masing.</p>
+<ol><li>Gambarkan sumbu mendatar untuk variabel X dan sumbu tegak untuk variabel Y.</li><li>Tuliskan nama variabel dan satuannya pada masing-masing sumbu, lalu tentukan skala yang sesuai dengan rentang data.</li><li>Plot seluruh pasangan data sebagai titik koordinat (X, Y), sedikitnya 10 titik. Titik-titik tidak perlu dihubungkan.</li><li>Berikan judul diagram sesuai studi kasus kalian, kemudian periksa kembali kesesuaian titik dengan tabel pada Misi 01.</li></ol>
+<p><b>Hasil tugas:</b> diagram pencar dari data kalian sendiri. Gunakan diagram ini untuk interpretasi pada Misi 03.</p>
+<a href="interpretasi.html">
+
+
+<button>
+
+Lanjut Interpretasi Hubungan →
+
+</button>
+
+
+</a>
+</div>
+</section>
+
+
+
+
+<script src="../js/materi.js"></script>
+
+
+<div class="home-button">
+
+<a href="../index.html">
+
+<button>
+🏠 Menu Utama
+</button>
+
+</a>
+
+</div>
+
+</body>
+
+
+</html>

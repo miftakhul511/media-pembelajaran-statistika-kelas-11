@@ -1,0 +1,17 @@
+STATISTIKA EXPLORER — REVISI
+
+Salin index.html, folder pages, css, dan js ke folder proyek Anda.
+Pertahankan folder assets yang sudah Anda miliki. Gambar tidak disertakan.
+Background tetap menggunakan assets/images/background-home.jpg.
+Buka index.html atau unggah struktur folder ini ke GitHub Pages.
+
+Perubahan:
+1. Grafik fenomena Misi 02 sebelum Eksperimen Data.
+2. Equation regresi menggunakan MathML, bisa tampil tanpa internet.
+3. Kartu menu Eksplorasi duplikat dihapus; Lab Data dipertahankan.
+4. Font diperbesar sekitar 10%.
+
+Revisi lanjutan:
+5. Tugas pengumpulan minimal 10 pasangan data pada Misi 01.
+6. Tugas diagram pencar Misi 02, interpretasi Misi 03, dan korelasi Misi 05 memakai data yang sama.
+7. Tombol Kembali pada semua halaman subbab; bila dibuka langsung, kembali ke halaman cadangan yang sesuai.
