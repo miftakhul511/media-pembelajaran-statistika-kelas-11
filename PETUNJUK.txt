@@ -1,0 +1,26 @@
+STATISTIKA EXPLORER — VERSI PENYEMPURNAAN
+
+CARA MENGUJI
+1. Ekstrak seluruh ZIP ke satu folder. Jangan buka file langsung dari dalam ZIP.
+2. Buka index.html dengan Chrome, Edge, atau Firefox. Untuk penyimpanan progres yang konsisten ant halaman, gunakan hosting GitHub Pages atau server lokal (contoh: python -m http.server 8000, lalu buka http://localhost:8000).
+3. Kerjakan Tes Kemampuan Awal, isi identitas dan 8 jawaban, lalu Selesaikan.
+4. Buka Materi. Pada akhir setiap misi tekan Tandai Misi Selesai. Progres meningkat 20% per misi unik.
+5. Uji Diagram Pencar dengan angka positif, negatif, nol, besar, dan desimal kecil. Sentuh atau arahkan penunjuk pada titik untuk membaca koordinat.
+6. Buka Asesmen, isi identitas dan seluruh 20 jawaban. Setelah selesai muncul nilai, tabel jawaban, kunci, dan pembahasan. Tekan Ekspor Hasil Excel untuk mengunduh .xlsx.
+7. Latihan Asesmen Grafik dan Asesmen Studi Kasus tersedia melalui tautan pada halaman Asesmen.
+
+CATATAN
+- Progres, hasil tes terakhir, data diagram pencar, dan refleksi disimpan pada browser/perangkat yang digunakan; tidak dikirim ke server atau guru secara otomatis.
+- Pada perangkat bersama, gunakan Kerjakan Ulang untuk peserta berikutnya. Ekspor hasil sebelum berganti siswa.
+- Penyimpanan dapat hilang ketika data browser dihapus. Simpan hasil Excel sebagai arsip.
+- Batas angka mengikuti ketelitian numerik JavaScript. Skala diagram menyesuaikan rentang data secara otomatis.
+- Latar foto asli tidak disertakan pada unggahan sumber. Paket ini menggunakan latar gradasi yang dapat bekerja tanpa aset tambahan.
+- Permainan Ular Tangga tetap menuju situs eksternal dan memerlukan internet. Fitur inti lain tidak memerlukan CDN.
+- Tes awal: 2 soal jenis data, 2 membaca diagram batang, 2 pemusatan data (mean/median/modus), 1 koordinat Kartesius, 1 substitusi aljabar.
+- Asesmen utama: 20 soal, setiap soal 5 poin. Tes awal: 8 soal, setiap soal 12,5 poin.
+
+REVISI AKSES
+- Masukkan kode Bhayangkari@3 sebelum memulai media (peka huruf besar/kecil).
+- Akses berlaku selama sesi tab browser; tab/sesi baru dapat meminta kode kembali.
+- Kode pada HTML statis merupakan pembatas akses sederhana, bukan autentikasi server.
+- Tombol Refleksi di hasil tes diagnostik dihapus; hasil asesmen utama tetap dapat menuju Refleksi.
